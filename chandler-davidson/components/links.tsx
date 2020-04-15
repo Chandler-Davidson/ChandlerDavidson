@@ -7,7 +7,7 @@ const getLinkElement = (link: string[]) => {
   const [body, href] = link;
 
   return (
-    <li>
+    <li key={href+body}>
       <a href={href}>{body}</a>
       <style>{`
       a {
