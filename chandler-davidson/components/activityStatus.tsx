@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+// import style from "./activityStatus.module.css";
+import styles from "./activityStatus.module.css"
 type Props = {
   texts: string[]
 };
@@ -23,17 +24,13 @@ export function RotatingCube(props: Props) {
   }
 
   return (<>
-    <div className="scene">
-      <div className="cube"
-        style={{
-          transform: `translateZ(-80vh) rotateX(${index * 90}deg)`
-        }}
-        onClick={
+    <div className={styles.scene}onClick={
           () => {
             setIndex(index + 1);
             updateHiddenSide();
           }}>
-        {sides.map((s, i) => <div className={`face ${s}`}>{view[i]}</div>)}
+      <div className={styles.cube}>
+        {sides.map((s, i) => <div className={styles.face} id={styles[s]} key={s}>{view[i]}</div>)}
       </div>
     </div>
   </>);

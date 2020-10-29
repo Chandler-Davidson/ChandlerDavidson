@@ -37,12 +37,12 @@
   border: 1px dotted blue;
 }
 
-.face.front  { background: hsl(0deg 0% 54%); }
-.face.back   { background: hsl(0deg 0% 54%); }
-.face.top    { background: hsl(0deg 0% 54%); }
-.face.bottom { background: hsl(0deg 0% 54%); }
+#front  { background: hsl(0deg 0% 54%); }
+#back   { background: hsl(0deg 0% 54%); }
+#top    { background: hsl(0deg 0% 54%); }
+#bottom { background: hsl(0deg 0% 54%); }
 
-.face.front  { transform: rotateY(  0deg) translateZ(40vh); }
-.face.back   { transform: rotateY(180deg) rotateZ(180deg) translateZ(40vh); }
-.face.top    { transform: rotateX( 90deg) translateZ(40vh); }
-.face.bottom { transform: rotateX(-90deg) translateZ(40vh); }
+#front  { transform: rotateY(  0deg) translateZ(40vh); }
+#back   { transform: rotateY(180deg) rotateZ(180deg) translateZ(40vh); }
+#top    { transform: rotateX( 90deg) translateZ(40vh); }
+#bottom { transform: rotateX(-90deg) translateZ(40vh); }
