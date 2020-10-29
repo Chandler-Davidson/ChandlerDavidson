@@ -28,10 +28,10 @@ export function RotatingCube(props: Props) {
     setView(view);
   }
 
-  // useEffect(() => {
-  //   const interval = setInterval(updateHiddenSide, 2000);
-  //   return () => clearInterval(interval);
-  // });
+  useEffect(() => {
+    const interval = setInterval(updateHiddenSide, 2000);
+    return () => clearInterval(interval);
+  });
 
   return (<>
     <div className={styles.scene}>
