@@ -14,13 +14,14 @@ const sides = [
 
 export function RotatingCube(props: Props) {
   const { texts } = props;
-  const view = texts.slice(0, 4);
 
   const [index, setIndex] = useState(0);
+  const [view, setView] = useState(texts.slice(0, 4))
   const updateHiddenSide = () => {
     const viewIndex = (index + 2) % view.length;
     const textsIndex = (index + 2) % texts.length;
     view[viewIndex] = texts[textsIndex];
+    setView(view);
   }
 
   return (<>
