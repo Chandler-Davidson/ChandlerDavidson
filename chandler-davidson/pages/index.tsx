@@ -1,14 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
 import Links from "../components/links";
-import { RotatingCube } from "../components/activityStatus";
-
-const activities = [
-  'Skating',
-  'Coding',
-  'Climbing',
-  'with 👪'
-];
+import { RotatingCube } from "../components/spinningCube/activityStatus";
+import activities from "../activities.json";
 
 const Home = () => (
   <Layout>
@@ -19,8 +13,8 @@ const Home = () => (
 
       <h2>I'm probably</h2>
       <RotatingCube texts={activities} />
-      
-      
+
+
     </div>
     <Links />
   </Layout>
