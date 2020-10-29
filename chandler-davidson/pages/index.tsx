@@ -6,20 +6,22 @@ import { RotatingCube } from "../components/activityStatus";
 const activities = [
   'Skating',
   'Coding',
-  'Family',
-  'Big 🐶',
-  'Other Stuff',
-  'Havin fun',
-  'I',
-  'Can',
-  'Keep',
-  'Going'
+  'Climbing',
+  'with 👪'
 ];
 
 const Home = () => (
   <Layout>
     <h1 className="title">Chandler Davidson</h1>
-    <RotatingCube texts={activities}/>
+    <div style={{
+      display: "flex"
+    }}>
+
+      <h2>I'm probably</h2>
+      <RotatingCube texts={activities} />
+      
+      
+    </div>
     <Links />
   </Layout>
 );

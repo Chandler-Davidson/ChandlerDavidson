@@ -25,12 +25,14 @@ export function RotatingCube(props: Props) {
   }
 
   return (<>
-    <div className={styles.scene}onClick={
-          () => {
-            setIndex(index + 1);
-            updateHiddenSide();
-          }}>
-      <div className={styles.cube}>
+    <div className={styles.scene}>
+      <div className={styles.cube} style={{
+        transform: `translateZ(-80vh) rotateX(${index * 90}deg)`
+      }}onClick={
+        () => {
+          setIndex(index + 1);
+          updateHiddenSide();
+        }}>
         {sides.map((s, i) => <div className={styles.face} id={styles[s]} key={s}>{view[i]}</div>)}
       </div>
     </div>

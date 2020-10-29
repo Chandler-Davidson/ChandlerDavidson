@@ -1,13 +1,16 @@
 .scene {
-  width: 20vh;
-  height: 20vh;
+  --height: 50px;
+  --width: 140px;
+  width: var(--width);
+  height: var(--height);
+  margin-top: 10px;
   
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  /* position: fixed; */
+  /* left: 50%;
+  top: 49%; */
+  /* transform: translate(-50%, -50%); */
 
-  perspective: 40vh;
+  /* perspective: 40vh; */
 }
 
 .cube {
@@ -19,21 +22,21 @@
 }
 
 .face {
-  width: 20vh;
-  height: 20vh;
+  width: var(--width);
+  height: var(--height);
 
   position: absolute;
 
-  line-height: 20vh;
-  font-size: 3vh;
+  line-height: 45px;
+  font-size: 1.5em;
   font-weight: bold;
-  color: white;
+  color: black;
   text-align: center;
-  border: 1px dotted blue;
-  background: hsl(0deg 0% 54%);
+  border: 3px solid black;
+  background: white;
 }
 
-#front  { transform: rotateY(  0deg) translateZ(10vh); }
-#back   { transform: rotateY(180deg) rotateZ(180deg) translateZ(10vh); }
-#top    { transform: rotateX( 90deg) translateZ(10vh); }
-#bottom { transform: rotateX(-90deg) translateZ(10vh); }
+#front  { transform: rotateY(  0deg) translateZ(calc(var(--height) / 2)); }
+#back   { transform: rotateY(180deg) rotateZ(180deg) translateZ(calc(var(--height) / 2)); }
+#top    { transform: rotateX( 90deg) translateZ(calc(var(--height) / 2)); }
+#bottom { transform: rotateX(-90deg) translateZ(calc(var(--height) / 2)); }
