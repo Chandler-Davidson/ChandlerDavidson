@@ -11,7 +11,6 @@ const getLinkElement = (link: string[]) => {
       <a href={href}>{body}</a>
       <style>{`
       a {
-        color: black;
         padding: 5px;
       }
 
