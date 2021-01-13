@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 45px;
+  bottom: 20%;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
