@@ -8,13 +8,10 @@ export async function fetchPosts(limit = 5, props = 'title,slug,published_at', p
   return (
     await postsBucket.getObjects({
       type: 'posts',
-      metadata: {
-        preview,
-      },
       props,
       limit,
     })
-  ).objects;
+  ).objects || [];
 }
 
 export async function fetchPost(slug) {
