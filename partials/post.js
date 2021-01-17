@@ -3,8 +3,8 @@ import {BlogComponentMatcher} from '../util/interweave/matchers';
 import styles from '../styles/Post.module.css';
 
 export default function Post({post}) {
-  const {title, content, published_at} = post || {};
-  const date = published_at ? new Date(published_at).toDateString() : '';
+  const {title, content, created_at} = post || {};
+  const date = created_at ? new Date(created_at).toDateString() : '';
 
   return (
     <div style={{marginTop: '4px'}}>

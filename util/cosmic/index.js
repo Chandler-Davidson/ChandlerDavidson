@@ -4,7 +4,7 @@ const cosmic = require('cosmicjs')();
 const {slug, read_key} = config.postsBucket;
 export const postsBucket = cosmic.bucket({slug, read_key});
 
-export async function fetchPosts(limit = 5, props = 'title,slug,published_at', preview = false) {
+export async function fetchPosts(limit = 5, props = 'title,slug,created_at', preview = false) {
   return (
     await postsBucket.getObjects({
       type: 'posts',
@@ -17,6 +17,6 @@ export async function fetchPosts(limit = 5, props = 'title,slug,published_at', p
 export async function fetchPost(slug) {
   return postsBucket.getObject({
     slug,
-    props: 'slug,title,content,published_at',
+    props: 'slug,title,content,created_at',
   });
 }
