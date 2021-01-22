@@ -7,9 +7,6 @@ export default function Tonify({songId}) {
   const router = useRouter();
   songId = songId || router.query.songId;
 
-  console.log(`router`)
-  console.log(router.query)
-
   return (
     <Provider store={store}>
       <Keyboard songId={songId} />

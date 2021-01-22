@@ -5,6 +5,7 @@ const components = {
   default: dynamic(() => import('./default'), {ssr: false}),
   'example-counter': dynamic(() => import('./example-counter'), {ssr: false}),
   tonify: dynamic(() => import('./tonify'), {ssr: false}),
+  'maybe-maybe-maybe': dynamic(() => import('./maybe-maybe-maybe'), {ssr: false}),
 };
 
 export function getComponent(tag) {
