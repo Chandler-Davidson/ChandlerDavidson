@@ -1,4 +1,4 @@
-import {db} from '../../util/firestore';
+import { db } from '../../util/firebase/firestore';
 
 export default async function (req, res) {
   const {notes} = req.body;
