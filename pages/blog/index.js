@@ -1,6 +1,6 @@
-import PostList from '../../partials/postList';
-import {fetchPosts} from '../../util/cosmic';
-import styles from '../../styles/Blog.module.css';
+import PostList from 'partials/postList';
+import {fetchPosts} from 'util/cosmic';
+import styles from 'styles/Blog.module.css';
 
 export async function getStaticProps(context) {
   return {

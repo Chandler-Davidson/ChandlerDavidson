@@ -1,5 +1,5 @@
 import {useRouter} from 'next/router';
-import {getComponent} from '../../blog-components';
+import {getComponent} from 'blog-components';
 
 export default function Preview() {
   const router = useRouter();

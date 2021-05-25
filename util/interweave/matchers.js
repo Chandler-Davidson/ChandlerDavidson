@@ -1,5 +1,5 @@
 import {Matcher} from 'interweave';
-import {getComponent} from '../../blog-components';
+import {getComponent} from 'blog-components';
 
 export class BlogComponentMatcher extends Matcher {
   match(str) {

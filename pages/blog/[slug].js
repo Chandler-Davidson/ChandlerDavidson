@@ -1,6 +1,6 @@
-import {fetchPost} from '../../util/cosmic';
-import PostPage from '../../partials/post';
-import LostPage from '../404';
+import {fetchPost} from 'util/cosmic';
+import PostPage from 'partials/post';
+import LostPage from 'pages/404';
 
 export async function getStaticPaths() {
   return {

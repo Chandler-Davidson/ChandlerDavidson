@@ -1,6 +1,6 @@
 import Interweave from 'interweave';
-import {BlogComponentMatcher} from '../util/interweave/matchers';
-import styles from '../styles/Post.module.css';
+import {BlogComponentMatcher} from 'util/interweave/matchers';
+import styles from 'styles/Post.module.css';
 
 export default function Post({post}) {
   const {title, content, created_at} = post || {};

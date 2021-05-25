@@ -1,4 +1,4 @@
-const db = require('../../../util/firebase/firestore').db;
+const db = require('util/firebase/firestore').db;
 
 export default async function (req, res) {
   const {songId} = req.query;

@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import styles from '../styles/RotatingCube.module.css';
+import styles from 'styles/RotatingCube.module.css';
 
 const sides = ['front', 'bottom', 'back', 'top'];
 

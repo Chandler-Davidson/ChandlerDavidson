@@ -1,4 +1,4 @@
-import config from '../../config';
+import config from 'config';
 const cosmic = require('cosmicjs')();
 
 const {slug, read_key} = config.postsBucket;

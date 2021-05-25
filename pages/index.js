@@ -1,7 +1,7 @@
-import styles from '../styles/Index.module.css';
-import {RotatingCube} from '../partials/rotatingCube';
-import {fetchPosts} from '../util/cosmic';
-import PostList from '../partials/postList';
+import styles from 'styles/Index.module.css';
+import {RotatingCube} from 'partials/rotatingCube';
+import {fetchPosts} from 'util/cosmic';
+import PostList from 'partials/postList';
 import Link from 'next/link';
 
 export async function getStaticProps(context) {
