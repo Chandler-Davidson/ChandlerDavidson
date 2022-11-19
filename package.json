@@ -14,7 +14,7 @@
     "cosmicjs": "^3.3.2",
     "firebase-admin": "^9.4.2",
     "interweave": "^12.6.0",
-    "next": "^10.2.3",
+    "next": "^13.0.4",
     "react": "^17.0.1",
     "react-dom": "17.0.1",
     "react-keyboard-event-handler": "^1.5.4",
