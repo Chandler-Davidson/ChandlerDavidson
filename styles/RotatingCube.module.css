@@ -1,11 +1,11 @@
 .scene {
   --height: 50px;
-  --width: 140px;
+  --width: 180px;
   --background-color: white;
   --text-color: black;
   width: var(--width);
   height: var(--height);
-  margin-top: 10px;
+  margin-top: 25px;
   margin-left: 5px;
 }
 
@@ -21,12 +21,13 @@
   width: var(--width);
   height: var(--height);
   position: absolute;
-  line-height: 45px;
-  font-size: 1.5em;
+  line-height: 40px;
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
   border: 3px solid var(--text-color);
   background: var(--background-color);
+  user-select: none;
 }
 
 .face.front {

@@ -1,12 +1,9 @@
-import Layout from 'partials/layout';
 import 'styles/globals.css';
 
-function MyApp({Component, pageProps}) {
+function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Component {...pageProps} />
   );
 }
 
-export default MyApp;
+export default App;
