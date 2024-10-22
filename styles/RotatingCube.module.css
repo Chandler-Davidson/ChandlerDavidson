@@ -1,8 +1,6 @@
 .scene {
   --height: 50px;
   --width: 180px;
-  --background-color: white;
-  --text-color: black;
   width: var(--width);
   height: var(--height);
   margin-top: 25px;
