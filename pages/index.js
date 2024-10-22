@@ -1,9 +1,12 @@
+import Link from 'next/link';
 import styles from 'styles/Index.module.css';
 import { RotatingCube } from 'partials/rotatingCube';
-import Link from 'next/link';
 import { useMediaQuery } from 'hooks/useMediaQuery';
+import isDev from 'utils/isDev';
 
-const activities = ['coding', 'with 👪', 'skating', 'at the 🏖️', 'biking'];
+const tld = isDev() ? '.com' : '.dev';
+const link = <Link href={`https://chandlerdavidson${tld}`}>{tld}</Link>;
+const cubeFaces = ['coding', 'with 👪', 'skating', link, 'at the 🏖️',];
 
 export default function Home() {
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -14,7 +17,7 @@ export default function Home() {
       {nameComponent}
       <div className={styles.row}>
         <h2 style={{ whiteSpace: 'nowrap' }}>I'm probably</h2>
-        <RotatingCube texts={activities} />
+        <RotatingCube contents={cubeFaces} />
       </div>
       <div className={styles.links}>
         <Link href="https://github.com/chandler-davidson">
