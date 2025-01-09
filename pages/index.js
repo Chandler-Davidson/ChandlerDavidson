@@ -29,6 +29,9 @@ export default function Home() {
         <Link href="https://www.linkedin.com/in/chandler-davidson-0248ba250/">
           LinkedIn
         </Link>
+        <Link href="mailto:chandlermdavidson@gmail.com">
+          Email
+        </Link>
       </div>
     </div>
   );
