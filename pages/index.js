@@ -32,6 +32,7 @@ export default function Home() {
         <Link href="mailto:chandlermdavidson@gmail.com">
           Email
         </Link>
+        <Link href="/games">Games</Link>
       </div>
     </div>
   );
