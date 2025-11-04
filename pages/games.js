@@ -11,7 +11,7 @@ const games = [
         name: 'Hello Phaser',
         icon: 'phaser-game',
         loader: async () => {
-            const module = await import('template-bun/dist/game.es');
+            const module = await import('hello-phaser/dist/game.es');
             module.default();
         }
     }
