@@ -1,3 +1,6 @@
+'use client';
+
+import Pwa from '../partials/pwa';
 import { useState } from 'react';
 
 const games = [{
@@ -24,12 +27,13 @@ export default function Games() {
     }
 
     return (<>
+        <Pwa />
         <h1>Games!</h1>
         <ul>
             {games.map(({ name, icon, loader }) =>
-                <div>
+                <div key={name}>
                     <h3>{name}</h3>
-                    <img key={name} src={`${icon}.png`} onClick={() => loadGame(name, loader)} />
+                    <img src={`${icon}.png`} onClick={() => loadGame(name, loader)} />
                 </div>
             )}
         </ul>
