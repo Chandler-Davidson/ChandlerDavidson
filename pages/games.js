@@ -7,8 +7,8 @@ const games = [{
     name: 'Hello Phaser',
     icon: 'phaser-game',
     loader: async () => {
-        const module = await import('template-bun/dist/phaser-game.es');
-        module.default('game-container');
+        const module = await import('template-bun/dist/game.es');
+        module.default();
     }
 }];
 
