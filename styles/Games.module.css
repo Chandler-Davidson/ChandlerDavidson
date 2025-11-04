@@ -168,7 +168,7 @@
 }
 .gameContainer {
   min-height: 420px;
-  background: repeating-conic-gradient(from 0deg,#f0f0f0 0deg,#f0f0f0 15deg,#fafafa 15deg,#fafafa 30deg);
+  /* background: repeating-conic-gradient(from 0deg,#f0f0f0 0deg,#f0f0f0 15deg,#fafafa 15deg,#fafafa 30deg); */
   border: 4px solid #222;
   border-radius: 1rem;
   position: relative;
@@ -176,7 +176,7 @@
 }
 .canvasWrapper {
   min-height: 420px;
-  background: repeating-conic-gradient(from 0deg,#f0f0f0 0deg,#f0f0f0 15deg,#fafafa 15deg,#fafafa 30deg);
+  /* background: repeating-conic-gradient(from 0deg,#f0f0f0 0deg,#f0f0f0 15deg,#fafafa 15deg,#fafafa 30deg); */
   border: 4px solid #222;
   border-radius: 1rem;
   position: relative;

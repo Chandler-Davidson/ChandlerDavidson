@@ -116,8 +116,9 @@ export default function Games() {
                 ))}
             </section>
             <section className={styles.playArea} aria-label="Game play area">
-                <div id="canvas-wrapper" className={styles.canvasWrapper} />
                 {selected && (
+                    <>
+                <div id="canvas-wrapper" className={styles.canvasWrapper} />
                     <div className={styles.controls}>
                         <p className={styles.nowPlaying}>Now Playing: {selected}</p>
                         <button
@@ -130,6 +131,7 @@ export default function Games() {
                         </button>
                         {loading && <div className={styles.loader} aria-live="polite">Loading…</div>}
                     </div>
+                    </>
                 )}
             </section>
         </>
